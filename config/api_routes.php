@@ -1,5 +1,5 @@
 <?php
-$api_root = 'http://localhost:8001/api';
+$api_root = 'http://localhost:8000/api';
 return [
     'api_base_path'=>$api_root,
 
@@ -11,6 +11,7 @@ return [
     'api_latest_property'=>$api_root.'/properties/latest',
     'api_latest_trending_property'=>$api_root.'/properties/latestTrending',
     'api_related_property'=>$api_root.'/properties/related',
+    'api_generic_latest_property'=>$api_root.'/properties/genericLatest',
 
 
     'api_images'=>$api_root.'/uploads/images',//attatch file_name as path variable

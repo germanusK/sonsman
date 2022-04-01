@@ -5479,7 +5479,14 @@ __webpack_require__(/*! ./bootstrap */ "./resources/js/bootstrap.js");
 
 
 window.Alpine = alpinejs__WEBPACK_IMPORTED_MODULE_0__["default"];
-alpinejs__WEBPACK_IMPORTED_MODULE_0__["default"].start();
+alpinejs__WEBPACK_IMPORTED_MODULE_0__["default"].start(); // Toggler for navigation
+
+var toggler = document.getElementById("nav-toggler");
+
+toggler.onclick = function () {
+  var params = arguments.length > 0 && arguments[0] !== undefined ? arguments[0] : document.getElementById("nav-box");
+  params.classList.toggle("hidden");
+};
 
 /***/ }),
 

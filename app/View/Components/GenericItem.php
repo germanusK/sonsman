@@ -7,15 +7,24 @@ use Illuminate\View\Component;
 class GenericItem extends Component
 {
 
-    private $item;
+    public $data;
+    // $item @ model
+    // 'name',
+    // 'group',
+    // 'category',
+    // 'description',
+    // 'images',
+    // 'grade',
+    // 'price'
     /**
      * Create a new component instance.
      *
      * @return void
      */
-    public function __construct()
+    public function __construct($data)
     {
         //
+        $this->data = $data;
     }
 
     /**
@@ -25,6 +34,6 @@ class GenericItem extends Component
      */
     public function render()
     {
-        return view('components.generic-item');
+        return view('components.generic-item', ['data'=>$this->data]);
     }
 }

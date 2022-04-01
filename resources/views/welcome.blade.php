@@ -68,64 +68,35 @@
         </div>
         <!-- END OF SERVICES -->
 
-        <!-- Our works or products -->
-        
 
+
+        <!-- Our works or products -->
         <!-- Latest -->
         <div class="w-full h-auto md:h-screen bg-black py-12">
             
             <div class="w-11/12 md:w-5/6 mx-auto text-2xl text-white text-center font-semibold py-2">Latest Deals</div>
-            <div class="w-11/12 md:w-5/6 mx-auto text-slate-100 text-center">Don't think about it's current value. Think about it's future value</div>
+            <div class="w-11/12 md:w-5/6 mx-auto text-slate-100 text-center mb-4">Don't think about it's current value. Think about it's future value</div>
             <!-- Horizontal scrolling container -->
             <div class="w-11/12 md:w-5/6 h-96 md:h-3/4 mx-auto my-4 ">
                 <div class="w-full h-full flex whitespace-nowrap overflow-x-scroll no-scrollbar">
-                    <!-- Horizontal scroll item -->
-                    <x-generic-item></x-generic-item>
+                    @if(count($data['latestTrending'])>0)
 
+                    @foreach($data['latestTrending'] as $value)
                     <!-- Horizontal scroll item -->
-                    <x-generic-item></x-generic-item>
-
-                    <!-- Horizontal scroll item -->
-                    <x-generic-item></x-generic-item>
-
-                    <!-- Horizontal scroll item -->
-                    <x-generic-item></x-generic-item>
-
-                    <!-- Horizontal scroll item -->
-                    <x-generic-item></x-generic-item>
-
-                    <!-- Horizontal scroll item -->
-                    <x-generic-item></x-generic-item>
-
-                    <!-- Horizontal scroll item -->
-                    <x-generic-item></x-generic-item>
-
-                    <!-- Horizontal scroll item -->
-                    <x-generic-item></x-generic-item>
+                    <x-generic-item :data="$value"/>
+                    @endforeach
+                    @endif
                 </div>
             </div>
         </div>
 
         <!-- Others -->
-        <div class="w-11/12 md:w-5/6 h-auto grid sm:grid-cols-2 md:grid-cols-3 mx-auto py-12">
-            
-            <x-generic-item2></x-generic-item2>
-
-            <x-generic-item2></x-generic-item2>
-
-            <x-generic-item2></x-generic-item2>
-
-            <x-generic-item2></x-generic-item2>
-
-            <x-generic-item2></x-generic-item2>
-
-            <x-generic-item2></x-generic-item2>
-
-            <x-generic-item2></x-generic-item2>
-
-            <x-generic-item2></x-generic-item2>
-
-            {{ $others }}
+        <div class="w-11/12 md:w-5/6 h-auto grid sm:grid-cols-2 md:grid-cols-3 mx-auto mt-4 py-12 overflow-y-scroll max-h-screen no-scrollbar" >
+            @if(count($data['property'])>0)
+                @foreach($data['property'] as $value)
+                <x-generic-item2 :data="$value"/>
+                @endforeach
+            @endif
         </div>
 
         <!-- Our core values and interests -->

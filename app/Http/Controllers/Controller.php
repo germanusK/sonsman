@@ -21,9 +21,9 @@ class Controller extends BaseController
 
     function index(Request $request){
         // get latest/trending items 
-        $latestTrending=$this->httpService->getLatestTrendingProperty();
-        $others=$this->httpService->getProperty()->collect();
-
-        return view('welcome', ['others'=>$others[0]['images'][0]]);
+        $latestTrending=$this->httpService->getLatestTrendingProperty()->collect();
+        $property=$this->httpService->getProperty()->collect();
+        $data = ['latestTrending'=>$latestTrending, 'property'=>$property];
+        return view('welcome', ['data'=>$data]);
     }
 }

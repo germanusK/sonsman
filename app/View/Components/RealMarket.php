@@ -2,18 +2,22 @@
 
 namespace App\View\Components;
 
+use App\HttpService\HttpServiceProvider;
 use Illuminate\View\Component;
 
 class RealMarket extends Component
 {
+
+    protected $httpService;
     /**
      * Create a new component instance.
      *
      * @return void
      */
-    public function __construct()
+    public function __construct(HttpServiceProvider $provider)
     {
         //
+        $this->httpService = $provider;
     }
 
     /**
@@ -23,6 +27,9 @@ class RealMarket extends Component
      */
     public function render()
     {
-        return view('components.real-market');
+        $trending = $this->httpService->genericGetLatestTrending(['group'=>'GC'])->collect();
+        $data = $this->httpService->genericGetProperty(['group'=>'GC'])->collect();
+
+        return view('components.real-market', ['trending'=>$trending, 'data'=>$data]);
     }
 }

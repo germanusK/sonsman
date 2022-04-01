@@ -13,9 +13,10 @@ class GenericItem2 extends Component
      *
      * @return void
      */
-    public function __construct()
+    public function __construct($data)
     {
         //
+        $this->data = $data;
     }
 
     /**
@@ -25,6 +26,6 @@ class GenericItem2 extends Component
      */
     public function render()
     {
-        return view('components.generic-item2', [$this->data]);
+        return view('components.generic-item2', ['data'=>$this->data]);
     }
 }

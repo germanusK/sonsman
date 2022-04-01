@@ -28,7 +28,11 @@ class HttpServiceProvider{
     }
 
     function genericGetProperty($argumentArray){
-        return Http::get(Config::get('api_routes.api_specific_properties'), [$argumentArray]);
+        return Http::get(Config::get('api_routes.api_specific_properties'), $argumentArray);
+    }
+
+    function genericGetLatestTrending($argumentArray){
+        return Http::get(Config::get('api_routes.api_generic_latest_property'), $argumentArray);
     }
 
     function getLatestTrendingProperty(){
@@ -38,4 +42,5 @@ class HttpServiceProvider{
     function getPropertyCount(){
         return Http::get(Config::get('api_routes.api_property_count'));
     }
+    
 }

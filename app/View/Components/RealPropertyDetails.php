@@ -2,18 +2,24 @@
 
 namespace App\View\Components;
 
+use App\HttpService\HttpServiceProvider;
+use Illuminate\Routing\Router;
 use Illuminate\View\Component;
 
 class RealPropertyDetails extends Component
 {
+
+    private $http, $id;
     /**
      * Create a new component instance.
      *
      * @return void
      */
-    public function __construct()
+    public function __construct(HttpServiceProvider $provider, $id)
     {
         //
+        $this->http = $provider;
+        $this->id = $id;
     }
 
     /**
@@ -23,6 +29,10 @@ class RealPropertyDetails extends Component
      */
     public function render()
     {
-        return view('components.real-property-details');
+
+        $data = $this->http->getById($this->id)->collect();
+        $related = $this->http->getRelatedProperty($this->id)->collect();
+
+        return view('components.real-property-details', ['data'=>$data, 'related'=>$related]);
     }
 }

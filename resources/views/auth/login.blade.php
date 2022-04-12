@@ -12,7 +12,7 @@
         <!-- Validation Errors -->
         <x-auth-validation-errors class="mb-4" :errors="$errors" />
 
-        <form method="POST" action="{{ route('login') }}" class="bg-yellow-500">
+        <form method="POST" action="{{ route('login') }}" class="">
             @csrf
 
             <!-- Email Address -->
@@ -52,5 +52,8 @@
                 </x-button>
             </div>
         </form>
+        <a href="{{ url('/register') }}" class="block text-center text-sm italic text-blue-500 py-2">create an account</a>
+        <a href="{{ url('/secured') }}" class="block text-center text-sm italic text-blue-500 py-2">DB</a>
+
     </x-auth-card>
 </x-guest-layout>

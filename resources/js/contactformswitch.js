@@ -10,3 +10,16 @@ function setContactForm(n){
     })
     return;
 }
+function toggle_search() {
+    document.getElementById('seach-box').classList.contains('hidden')?
+    document.getElementById('seach-box').classList.remove('hidden'):
+    document.getElementById('seach-box').classList.add('hidden');
+}
+
+// Toggler for navigation
+
+function toggle_nav() {
+    document.getElementById('nav-box').classList.contains('hidden')?
+    document.getElementById("nav-box").classList.remove("hidden"):
+    document.getElementById("nav-box").classList.add("hidden");
+}

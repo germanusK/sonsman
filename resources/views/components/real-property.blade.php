@@ -27,7 +27,16 @@
         </div>
     </div>
     <div class="w-1/5  align-bottom items-end justify-center flex" style="min-width: 5rem;">
-        <div class="w-full h-3/5 my-4 mx-1 rounded-md shadow-lg bg-gradient-to-t from-blue-100 to-white bg-blend-color-burn"></div>
+        <div class="w-full h-3/5 my-4 mx-1 py-3 px-2 rounded-md shadow-lg bg-gradient-to-t from-blue-100 to-white bg-blend-color-burn flex flex-col items-center justify-center align-middle overflow-y-scroll no-scrollbar">
+            @if(isset($counts))
+                @foreach($counts as $key=>$value)
+                    <div class=" -skew-x-12 block py-3 text-center">
+                        <span class=" skew-x-12 text-3xl text-blue-800 px-1 font-bold">{{ $value }}</span>
+                        <div class="text-lg text-blue-600 px-1 font-semibold italic capitalize"> {{ $key }}</div>
+                    </div>
+                @endforeach
+            @endif
+        </div>
     </div>
     
 </div>

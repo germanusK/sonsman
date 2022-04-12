@@ -9,12 +9,8 @@
         <link href="https://cdn.jsdelivr.net/npm/tailwindcss/dist/tailwind.min.css" rel="stylesheet"> 
         <link rel="stylesheet" href="{{ asset('fontawesome-free-5.3.1/css/all.min.css') }}">
         <script src="https://cdn.tailwindcss.com"></script>
-        <script>
-            function toggle_nav() {
-                document.getElementById("nav-box").classList.toggle("hidden");
-                document.getElementById("nav-box").classList.toggle("inline-block");
-            }
-        </script>
+        <script src="{{ asset('js/app.js') }}"></script>
+        
 		<style>
             body {
                 font-family: 'Nunito', sans-serif;

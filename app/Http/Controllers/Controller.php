@@ -14,7 +14,7 @@ class Controller extends BaseController
 {
     use AuthorizesRequests, DispatchesJobs, ValidatesRequests;
 
-    protected $httpService, $router;
+    public $httpService, $router;
     function __construct(HttpServiceProvider $httpProvider, Router $router)
     {
         $this->httpService = $httpProvider;

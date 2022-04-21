@@ -1,6 +1,6 @@
-<div class="bg-stone-200">
+<div class="bg-white">
     <div class="w-11/12 md:w-5/6 mx-auto flex flex-wrap align-middle items-center">
-        <div class="w-5/6 md:w-2/3 h-full my-12 px-2 py-4 shadow-2xl rounded-2xl">
+        <div class="w-5/6 md:w-7/12 h-full my-12 px-2 py-4 shadow-2xl rounded-2xl">
             <div class="w-full  shadow-lg bg-stone-200 p-2 rounded-2xl">
                 <img src=" {{ $data['images'][0] }} " alt="" class="w-full h-auto rounded-2xl">
             </div>
@@ -12,13 +12,13 @@
                 @endforeach
             </div>
         </div>
-        <div class="w-3/4 md:w-1/3 h-full flex align-middle items-center justify-center my-12 px-2 py-4 overflow-y-scroll no-scrollbar">
+        <div class="w-3/4 md:w-1/3 h-full flex align-middle items-center justify-center px-2 mx-auto py-4 overflow-y-scroll no-scrollbar bg-gradient-to-r from-stone-400 via-white to-stone-400 bg-opacity-30">
             <div class="h-fit mx-auto">
                 @foreach($data as $key=>$value)
                     @if('images'==$key || 'id'==$key)
                         @continue
                     @endif
-                    <div class="py-3 border-y border-y-stone-600 my-2 text-center items-center justify-center">
+                    <div class="py-3 border-b border-b-stone-600 border-opacity-30 mb-1 text-center items-center justify-center">
                         <label for="" class="text-blue-500 italic font-medium capitalize">{{ $key }}</label>
                         <div class="text-black text-xl font-semibold"> {{ $value }} </div>
                     </div>

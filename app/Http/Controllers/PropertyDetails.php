@@ -10,12 +10,12 @@ use Illuminate\Routing\RouteUri;
 
 class PropertyDetails extends Controller
 {
-    private $router;
+    // private $router;
 
-    function __construct(Router $router)
-    {
-        $this->router = $router;
-    }
+    // function __construct(Router $router)
+    // {
+    //     $this->router = $router;
+    // }
 
     function index(Request $request){
         

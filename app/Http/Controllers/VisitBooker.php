@@ -21,14 +21,19 @@ class VisitBooker extends Controller
     
     function submit(Request $request){
         
-        
-        $validator = Validator::make($request->all(), []);
+        $validator = Validator::make($request->all(), [
+            'name'=>'required',
+            'email'=>'required',
+            'due_date'=>'required:timestamp',
+            'asset_id'=>'required'
+        ]);
         if ($validator->fails()) {
             # code...
-            return redirect()->withErrors($validator->errors());
+            return $validator->errors();
         }
         // post schedule
-        $this->httpService->postSchedule($request->all());
+        return request()->all();
+        return $this->httpService->postSchedule($request->all());
         
     }
 }

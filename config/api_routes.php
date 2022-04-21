@@ -48,5 +48,10 @@ return [
     'api_users'=>$api_root.'/users',
     'api_users_count'=>$api_root.'/users/count',
     'api_specific_users'=>$api_root.'/users/some',
-    'api_specific_users_count'=>$api_root.'/users/some/count'
+    'api_specific_users_count'=>$api_root.'/users/some/count',
+
+    // Other Routes
+    'api_groups'=>$api_root.'/groups',
+    'api_categories'=>$api_root.'/categories',
+    'api_grades'=>$api_root.'/grades'
 ];

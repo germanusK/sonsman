@@ -12,22 +12,22 @@
     </div>
 
     <div class="w-full py-4">
-        <form action="{{url('/rest/property/update/'.$data['id'])}}" method="post" class="w-5/6 md:w-2/3 max-w-sm px-6 py-12 mx-auto rounded-xl border-black border-x border-opacity-40 bg-stone-900 bg-opacity-20">
+        <form action="{{url('/rest/property/update/'.$data['id'])}}" method="post" enctype="multipart/form-data" class="w-5/6 max-w-md px-6 py-12 mx-auto rounded-xl border-black border-x border-opacity-40 bg-stone-900 bg-opacity-20">
             @foreach($data as $key=>$value)
                 @if('images' != $key && 'id' != $key && 'created_at' != $key && 'updated_at' != $key )
-                    <div class="py-1 flex flex-wrap">
+                    <div class="py-1 flex flex-wrap w-11/12 mx-auto">
                         <label for="{{$key}}" class="sm:block w-full  capitalize text-sm text-slate-200 italic sm:w-20">{{$key}}:</label>
-                        @if('description'==$key)<textarea name="{{$key}}" id="" class="py-1 rounded focus:rounded no-scrollbar flex-auto">{{$value}}</textarea>
-                        @elseif('group'==$key) <select name="{{$key}}" id="" class="py-1 rounded focus:rounded flex-auto">
-                            <option value="{{$value}}" selected>{{$value}}</option>
+                        @if('description'==$key)<textarea name="{{$key}}" id="" class="py-1 pl-2 rounded focus:rounded no-scrollbar flex-auto w-full bg-white bg-opacity-20">{{$value}}</textarea>
+                        @elseif('group'==$key) <select name="{{$key}}" id="" class="py-1 pl-2 rounded focus:rounded flex-auto w-full bg-white bg-opacity-20">
+                            <option value="{{$value}}" selected class="bg-white bg-opacity-20">{{$value}}</option>
                             @foreach(['GC', 'RE', 'ARCH', 'CONS'] as $index=>$val)
                                 @if($value != $val)
-                                    <option value="{{$val}}">{{$val}}</option>
+                                    <option value="{{$val}}" class="bg-white bg-opacity-20">{{$val}}</option>
                                 @endif
                             @endforeach
                         </select>
                         @else
-                            <input type="text" name="{{$key}}" id="" value="{{$value}}" class="py-1 rounded focus:rounded flex-auto">
+                            <input type="text" name="{{$key}}" id="" value="{{$value}}" class="py-1 pl-2 rounded focus:rounded flex-auto w-full bg-white bg-opacity-20">
                         @endif
                     </div>
                 @endif

@@ -29,9 +29,9 @@
                         <div class="w-full lg:w-1/2 mx-auto px-2">
                             <div class="shadow-md py-1 my-1 px-3">
                                 <label for="due_time" class="text-blue-400 font-extralight italic lowercase">Due time:</label><br>
-                                <input type="datetime-local" required class="w-11/12 py-1 text-base text-slate-800 rounded-md focus:rounded-md" name="name" placeholder="choose date">
+                                <input type="datetime-local" required class="w-11/12 py-1 text-base text-slate-800 rounded-md focus:rounded-md" name="due_date" placeholder="choose date">
                             </div>
-                            <input type="text" name="productId" id="" value="{{ $data['id'] }}" hidden>
+                            <input type="text" name="asset_id" id="" value="{{ $data['id'] }}" hidden>
                             <!-- <div class="shadow-md py-1 my-1 px-3"> -->
                                 <!-- <label for="productId" class="text-blue-400 font-extralight italic lowercase">product id:</label><br> -->
                             <!-- </div> -->

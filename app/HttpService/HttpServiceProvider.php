@@ -2,12 +2,12 @@
 
 namespace App\HttpService;
 
+use GuzzleHttp\Client;
 use Illuminate\Support\Facades\Config;
 use Illuminate\Support\Facades\Http;
 use League\Flysystem\ConnectionErrorException;
 
-class HttpServiceProvider{
-
+class HttpServiceProvider extends Client{
 
     function testString(){
         return "Seems better now";

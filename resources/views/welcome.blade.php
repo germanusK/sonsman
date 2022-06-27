@@ -3,7 +3,7 @@
 <div class="w-full md:h-screen">
     <div class="w-11/12 md:w-5/6 mx-auto flex md:h-full">
         <div class="w-2/5 md:h-full flex items-center align-middle justify-center"><div class="block w-11/12 mx-auto">
-            <div class="text-3xl md:text-4xl font-black my-8 text-blue-800 text-center">SONSMAN <br> <span class="text-xl text-red-500 uppercase">beyond standard, unto uptimum</span></div>
+            <div class="text-3xl md:text-4xl font-black my-8 text-blue-800 text-center underline italic">SONSMAN <br> <span class="text-xl text-red-500 uppercase">beyond standard, unto uptimum</span></div>
             <div class="text-2xl text-center text-slate-500">Making it all new and fresh. </div>
             <div class="flex items-center justify-content-center">
                 <a href="{{url('/home')}}" class="my-6 mx-auto py-2 px-5 border-2 border-blue-500 hover:border-red-500 hover:bg-red-500 hover:text-white text-blue-500 text-3xl rounded-r-full rounded-l-full">Welcome Home</a>
@@ -36,7 +36,7 @@
                     </div>
                     <div class="w-full h-1/5 absolute z-10 rounded-t-full border-collapse rounded-b-3xl bottom-0 left-0 bg-white bg-opacity-60"></div>
                 </div>
-                
+
             </div>
         </div>
     </div>

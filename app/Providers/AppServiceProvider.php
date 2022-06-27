@@ -2,7 +2,7 @@
 
 namespace App\Providers;
 
-use App\HttpService\HttpServiceProvider;
+use App\Services\AppService1;
 use Facade\FlareClient\Http\Client;
 use Illuminate\Support\Facades\Http;
 use Illuminate\Support\ServiceProvider;
@@ -17,8 +17,8 @@ class AppServiceProvider extends ServiceProvider
     public function register()
     {
         //
-        $this->app->bind(HttpServiceProvider::class, function($app){
-            return new HttpServiceProvider();
+        $this->app->bind(MainService::class, function($app){
+            return new AppService1();
         });
     }
 

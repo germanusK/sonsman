@@ -1,0 +1,32 @@
+{
+	"folders": [
+		{
+			"path": "../.."
+		},
+		{
+			"path": "../../../../NG-TECK/NSMS-frontend"
+		},
+		{
+			"path": "../../../property_trust_api"
+		},
+		{
+			"path": "../../../../SSP/SSP"
+		},
+		{
+			"path": "../../../../../../../var/www/html/EXERCISE1"
+		},
+		{
+			"path": "../../../../../../../var/www/html"
+		},
+		{
+			"path": "../../../../CT Inc Property"
+		},
+		{
+			"path": "../../../../Proj240522"
+		},
+		{
+			"path": "../../../../Proj_Main"
+		}
+	],
+	"settings": {}
+}

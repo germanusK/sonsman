@@ -18,6 +18,13 @@ jobs:
     - name: Validate composer.json and composer.lock
       run: composer validate --strict
 
+    - name: Deploy to Heroku
+      uses: akhileshns/heroku-deploy@v3.12.12
+      with:
+        heroku_api_key: ${{ secrets.HEROKU_API_KEY }}
+        heroku_app_name: ${{ secrets.HEROKU_APP_NAME }}
+        heroku_email: ${{ secrets.HEROKU_EMAIL }}
+        
     - name: Cache Composer packages
       id: composer-cache
       uses: actions/cache@v3

@@ -4,9 +4,9 @@
     <div class="w-11/12 md:w-5/6 mx-auto flex md:h-full">
         <div class="w-2/5 md:h-full flex items-center align-middle justify-center"><div class="block w-11/12 mx-auto">
             <div class="text-3xl md:text-4xl font-black my-8 text-blue-800 text-center">SONSMAN <br> <span class="text-xl text-blue-500 uppercase">beyond standard, unto uptimum</span></div>
-            <div class="text-2xl text-center text-slate-500">Making it all new and fresh. </div>
+            <div class="text-2xl text-center text-green-500">Making it all new and fresh. </div>
             <div class="flex items-center justify-content-center">
-                <a href="{{url('/home')}}" class="my-6 mx-auto py-2 px-5 border-2 border-blue-500 hover:border-blue-800 hover:bg-blue-500 hover:text-white text-blue-500 text-3xl rounded-r-full rounded-l-full">Welcome Home</a>
+                <a href="{{url('/home')}}" class="my-6 mx-auto py-2 px-5 border-2 border-blue-500 hover:border-blue-800 hover:bg-blue-300 transition-all text-blue-800 text-3xl rounded-r-2xl rounded-l-2xl">Welcome Home</a>
             </div>
         </div></div>
         <div class="w-3/5 md:h-full flex items-center align-middle justify-center">

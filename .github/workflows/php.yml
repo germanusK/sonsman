@@ -25,6 +25,9 @@ jobs:
         heroku_app_name: ${{ secrets.HEROKU_APP_NAME }}
         heroku_email: ${{ secrets.HEROKU_EMAIL }}
         
+    - name: clear cache
+      run: php artisan cache:clear
+      
     - name: Cache Composer packages
       id: composer-cache
       uses: actions/cache@v3

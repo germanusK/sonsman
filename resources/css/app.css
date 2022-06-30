@@ -1,15 +1,72 @@
+/* COLORS:
+• PACK1
+    ◦ #010519 hsl(230,92%,5%)rgb(1,5,25)
+    ◦ #ed4b5b hsl(354,82%,61%)rgb(237,75,91)
+    ◦ #ffffff#fffwhitehsl(0,0%,100%)rgb(255,255,255
+• PACK2
+    ◦ #01193a  hsl(215,97%,12%)rgb(1,25,58)
+    ◦ #0b3583  hsl(219,85%,28%)rgb(11,53,131)
+    ◦ #ffffff#fffwhitehsl(0,0%,100%)rgb(255,255,255)
+    ◦ #72affc  hsl(213,96%,72%)rgb(114,175,252) */
+
+
 @import 'tailwindcss/base';
 @import 'tailwindcss/components';
 @import 'tailwindcss/utilities';
+
 :root{
+
+    --theme1-primary-color: #010519;
+    --theme1-secondary-color: #ed4b5b;
+    --theme1-default-color: #fff;
+
+    --theme2-primary-color: #01193a;
+    --theme2-secondary-color: #0b3583;
+    --theme2-default-color: #fff;
+
     font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
 }
-.bgd1{
-    background-image: url("../../public/img/bgd1.png");
+
+.bg-p{background-color: var(--theme1-primary-color);}
+.bg-s{background-color: var(--theme1-secondary-color);}
+.bg-d{background-color: var(--theme1-default-color);}
+.text-p{color: var(--theme1-primary-color);}
+.text-s{color: var(--theme1-secondary-color);}
+.text-d{color: var(--theme1-default-color);}
+.border-p{border-color: var(--theme1-primary-color);}
+.border-s{border-color: var(--theme1-secondary-color);}
+.border-d{border-color: var(--theme1-default-color);}
+.bg-grad1{background-image: linear-gradient(110deg, transparent 40%, var(--theme1-primary-color) 40%);}
+
+
+.welcome-bg{
+    background-image: url("../../public/img/domenico.jpg");
     background-position: center;
-    background-repeat: no-repeat;
     background-size: cover;
-    background-blend-mode: darken;
+    background-repeat: no-repeat;
+    background-color: rgba(1, 5, 25, 0.5);
+    background-blend-mode: overlay;
+}
+
+.home-bg{
+    background-image: url("../../public/img/sunny.jpg");
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-color: rgba(1, 5, 25, 0.5);
+    background-blend-mode: overlay;
+    background-attachment: fixed;
+}
+
+.hl1{
+    background-image: url("../../public/img/domenico.jpg");
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-color: rgba(1, 5, 25, 0.4);
+    background-blend-mode: overlay;
+    background-attachment: fixed;
+    height: 75vh;
 }
 
 .mini-scrollbar::-webkit-scrollbar {
@@ -22,5 +79,5 @@
 .mini-scrollbar::-webkit-scrollbar-thumb {
     background-color: white;    /* color of the scroll thumb */
     border-radius: 10rem;       /* roundness of the scroll thumb */
-    border: 3px solid blue;  /* creates padding around scroll thumb */
+    border: 3px solid var(--theme1-primary-color);  /* creates padding around scroll thumb */
 }

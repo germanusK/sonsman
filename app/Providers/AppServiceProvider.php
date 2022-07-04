@@ -5,6 +5,7 @@ namespace App\Providers;
 use App\Services\AppService1;
 use Facade\FlareClient\Http\Client;
 use Illuminate\Support\Facades\Http;
+use Illuminate\Support\Facades\URL;
 use Illuminate\Support\ServiceProvider;
 
 class AppServiceProvider extends ServiceProvider
@@ -30,5 +31,9 @@ class AppServiceProvider extends ServiceProvider
     public function boot()
     {
         //
+        if ($this->app->environment('production')) {
+            # code...
+            URL::forceScheme('https');
+        }
     }
 }

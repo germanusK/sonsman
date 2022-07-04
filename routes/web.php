@@ -18,3 +18,18 @@ Route::get('/', function(){
 Route::get('/home', function(){
     return view('pages.home');
 });
+Route::get('/services', function(){
+    return view('pages.services');
+});
+Route::get('/works', function(){
+    return view('pages.works');
+});
+Route::get('/quotes', function(){
+    return view('pages.quotes');
+});
+Route::get('/blog', function(){
+    return view('pages.blog');
+});
+Route::get('/help', function(){
+    return view('pages.help');
+});

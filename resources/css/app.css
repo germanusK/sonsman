@@ -48,8 +48,7 @@
     background-blend-mode: overlay;
 }
 
-.home-bg{
-    background-image: url("../../public/img/sunny.jpg");
+.home-bg, .hl1{
     background-position: center;
     background-size: cover;
     background-repeat: no-repeat;
@@ -58,17 +57,62 @@
     background-attachment: fixed;
 }
 
+.home-bg{
+    background-image: url("../../public/img/sunny.jpg");
+}
+
 .hl1{
     background-image: url("../../public/img/domenico.jpg");
-    background-position: center;
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-color: rgba(1, 5, 25, 0.4);
-    background-blend-mode: overlay;
-    background-attachment: fixed;
     height: 75vh;
 }
 
+.sl1, .wl1, .wl2, .ql1, .ql2, .bl1, .blog, .help1, .help2{
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-color: rgba(1, 5, 25, 0.9);
+    background-blend-mode: overlay;
+    background-attachment: fixed;
+}
+.sl1{
+    background-image: url("../../public/img/anmol.jpg");
+    height: 75vh;
+}
+
+.wl1{
+    background-image: url("../../public/img/pixabay.jpg");
+    height: 75vh;
+}
+.wl2{
+    background-image: url("../../public/img/riekus.jpg");
+}
+.ql1{
+    background-image: url("../../public/img/pasha.jpg");
+    min-height: 45vh;
+}
+.ql2{
+    background-image: url("../../public/img/skuffwdd161.jpg");
+}
+
+
+.bl1{
+    background-image: url("../../public/img/sebastian.jpg");
+    min-height: 50vh;
+}
+
+.blog{
+    background-image: url("../../public/img/jess.jpg");
+}
+
+.help1{
+    background-image: url("../../public/img/andrea.jpg");
+    height: 50vh;
+}
+
+.help2{
+    background-image: url("../../public/img/pexels.jpg");
+    min-height: 100vh;
+}
 .mini-scrollbar::-webkit-scrollbar {
     width: 10rem;             /* width of the entire scrollbar */
     height: 0.5rem;

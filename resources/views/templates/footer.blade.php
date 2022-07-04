@@ -9,9 +9,9 @@
     </div>
     <div class="w-full py-4 flex items-center justify-center bg-p">
         <div class="md:w-1/2 mx-auto">
-            <div class="text-center text-2xl capitalize text-p font-bold">Subscribe for updates</div>
+            <div class="text-center text-2xl capitalize text-s font-bold">Subscribe for updates</div>
             <form action="" method="post" class="w-3/4 mx-auto mt-8">
-                <input type="text" name="email" id="email" class="w-full bg-p h-12 border-b-2 border-x-0 border-t-0 focus:border-x-0 focus:border-t-0 focus:border-b-2 border-s text-p text-center placeholder:text-blue-500 text-lg" placeholder="email address">
+                <input type="text" name="email" id="email" class="w-full bg-p h-12 border-b-2 border-x-0 border-t-0 focus:border-x-0 focus:border-t-0 focus:border-b-2 border-s text-s text-center placeholder:text-blue-500 text-lg" placeholder="email address">
                 <div class="w-full flex items-center justify-end">
                     <button type="submit" class="border rounded-r-full rounded-l-full px-3 py-1 text-s shadow shadow-red-500 block mt-6 font-semibold">submit</button>
                 </div>

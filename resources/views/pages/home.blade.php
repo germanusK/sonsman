@@ -2,8 +2,8 @@
 @section('page-content')
 <div class="w-full home-bg">
     <div class="w-full mx-auto py-1 flex items-center align-middle hl1">
-        <div class="w-full md:w-4/5 text-center mx-auto px-3  items-center tracking-widest leading-relaxed align-middle justify-center h-full text-3xl text-d font-semibold font-sans flex flex-wrap flex-col">
-            <div class="w-full md:w-4/5 text-center mx-auto px-3 tracking-widest leading-relaxed font-bold mt-3 text-5xl font-sans block">Welcome to Sonsman</div>
+        <div class="w-full md:w-4/5 text-center mx-auto px-3  items-center tracking-widest leading-relaxed align-middle justify-center h-full text-2xl md:text-3xl text-d font-semibold font-sans flex flex-wrap flex-col">
+            <div class="w-full md:w-4/5 text-center mx-auto px-3 tracking-widest leading-relaxed font-black mt-3 text-3xl md:text-5xl block">Welcome to Sonsman</div>
             Join us where real things are happening
         </div>
     </div>
@@ -63,38 +63,31 @@
     <div class="w-full py-12 bg-d">
         <div class="w-11/12 mx-auto md:h-96 flex flex-col items-center align-middle justify-center">
             <div class="w-full text-center text-4xl text-p py-6 capitalize font-black">Our products</div>
-            <div class="w-full h-fit overflow-x-scroll whitespace-nowrap mini-scrollbar">
-                <div class="w-fit h-64 flex flex-row justify-around">
-                    <div class="w-60 h-60 mx-4 rounded border-y-2 bg-p border-s border-double border-opacity-30 flex flex-col align-top items-center justify-start">
+            <div class="w-full h-fit">
+                <div class="w-full h-64 flex flex-wrap flex-row justify-around mx-auto">
+                    <div class="w-60 h-60 mx-4 rounded border-y-2 bg-p border-s border-double border-opacity-30 flex flex-col align-top items-center justify-start relative">
                         <img src="{{asset('img/sunny.jpg')}}" alt="" class="w-full h-5/6 rounded mb-2 mt-0">
                         <div class="mx-2 text-center text-xl text-s font-semibold capitalize">Product1</div>
+                        <a href="" class="w-full h-full block absolute text-d text-center align-middle text-xl"><span class="fas fa-hand-pointer"></span></a>
                     </div>
-                    <div class="w-60 h-60 mx-4 rounded border-y-2 bg-p border-s border-double border-opacity-30 flex flex-col align-top items-center justify-start">
+                    <div class="w-60 h-60 mx-4 rounded border-y-2 bg-p border-s border-double border-opacity-30 flex flex-col align-top items-center justify-start relative">
                         <img src="{{asset('img/sunny.jpg')}}" alt="" class="w-full h-5/6 rounded mb-2 mt-0">
                         <div class="mx-2 text-center text-xl text-s font-semibold capitalize">Product1</div>
+                        <a href="" class="w-full h-full block absolute text-d text-center align-middle text-xl"><span class="fas fa-hand-pointer"></span></a>
                     </div>
-                    <div class="w-60 h-60 mx-4 rounded border-y-2 bg-p border-s border-double border-opacity-30 flex flex-col align-top items-center justify-start">
+                    <div class="w-60 h-60 mx-4 rounded border-y-2 bg-p border-s border-double border-opacity-30 flex flex-col align-top items-center justify-start relative">
                         <img src="{{asset('img/sunny.jpg')}}" alt="" class="w-full h-5/6 rounded mb-2 mt-0">
                         <div class="mx-2 text-center text-xl text-s font-semibold capitalize">Product1</div>
+                        <a href="" class="w-full h-full block absolute text-d text-center align-middle text-xl"><span class="fas fa-hand-pointer"></span></a>
                     </div>
-                    <div class="w-60 h-60 mx-4 rounded border-y-2 bg-p border-s border-double border-opacity-30 flex flex-col align-top items-center justify-start">
+                    <div class="w-60 h-60 mx-4 rounded border-y-2 bg-p border-s border-double border-opacity-30 flex flex-col align-top items-center justify-start relative">
                         <img src="{{asset('img/sunny.jpg')}}" alt="" class="w-full h-5/6 rounded mb-2 mt-0">
                         <div class="mx-2 text-center text-xl text-s font-semibold capitalize">Product1</div>
-                    </div>
-                    <div class="w-60 h-60 mx-4 rounded border-y-2 bg-p border-s border-double border-opacity-30 flex flex-col align-top items-center justify-start">
-                        <img src="{{asset('img/sunny.jpg')}}" alt="" class="w-full h-5/6 rounded mb-2 mt-0">
-                        <div class="mx-2 text-center text-xl text-s font-semibold capitalize">Product1</div>
-                    </div>
-                    <div class="w-60 h-60 mx-4 rounded border-y-2 bg-p border-s border-double border-opacity-30 flex flex-col align-top items-center justify-start">
-                        <img src="{{asset('img/sunny.jpg')}}" alt="" class="w-full h-5/6 rounded mb-2 mt-0">
-                        <div class="mx-2 text-center text-xl text-s font-semibold capitalize">Product1</div>
-                    </div>
-                    <div class="w-60 h-60 mx-4 rounded border-y-2 bg-p border-s border-double border-opacity-30 flex flex-col align-top items-center justify-start">
-                        <img src="{{asset('img/sunny.jpg')}}" alt="" class="w-full h-5/6 rounded mb-2 mt-0">
-                        <div class="mx-2 text-center text-xl text-s font-semibold capitalize">Product1</div>
+                        <a href="" class="w-full h-full block absolute text-d text-center align-middle text-xl"><span class="fas fa-hand-pointer"></span></a>
                     </div>
                 </div>
             </div>
+            <a href="{{url('/products')}}" class=" w-fit my-8 py-1 px-3 border-2 border-p bg-s text-p rounded font-semibold">more</a>
         </div>
     </div>
 </div>

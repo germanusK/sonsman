@@ -6,10 +6,10 @@
     <meta name="viewport" content="width(=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="{{asset('css/app.css')}}">
     <link rel="stylesheet" href="{{asset('fontawesome-free-5.3.1/css/all.css')}}">
-    <script src="{{asset('js/app.js')}}"></script>
     <title>Document</title>
 </head>
 <body>
     @yield('page')
+    <script src="{{asset('js/app.js')}}"></script>
 </body>
 </html>

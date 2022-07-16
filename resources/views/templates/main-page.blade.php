@@ -8,7 +8,7 @@
     <link rel="stylesheet" href="{{asset('fontawesome-free-5.3.1/css/all.css')}}">
     <title>Document</title>
 </head>
-<body>
+<body >
     @yield('page')
     <script src="{{asset('js/app.js')}}"></script>
 </body>

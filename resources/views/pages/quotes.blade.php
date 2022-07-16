@@ -2,16 +2,16 @@
 @section('page-content')
 <div class="w-full">
     <div class="ql1 w-full flex flex-col justify-center py-12">
-        <div class="w-full text-center text-3xl md:text-5xl text-s font-black capitalize py-3">Sonsman Quotes</div>
+        <div class="w-full text-center text-xlarge text-s font-black capitalize py-3">Sonsman Quotes</div>
         <div class="w-full pt-10 flex justify-center">
             <div class="w-52 h-20 relative mx-auto flex flex-col justify-end">
-                <span class=" w-1/2 h-2/5 border-4 border-t-0 border-s rounded-b-xl absolute left-1/4 top-0 text-xl text-center text-s bg-p font-bold flex flex-col justify-center">500</span>
-                <div class="w-3/4 h-4/5 mx-auto border-4 border-s rounded-xl capitalize bg-p text-s text-2xl text-center flex flex-col justify-center font-semibold">Quotes</div>
+                <span class=" w-1/2 h-2/5 border-4 border-t-0 border-s rounded-b-xl absolute left-1/4 top-0 text-large text-center text-s bg-p font-bold flex flex-col justify-center">500</span>
+                <div class="w-3/4 h-4/5 mx-auto border-4 border-s rounded-xl capitalize bg-p text-s text-large text-center flex flex-col justify-center font-semibold">Quotes</div>
             </div>
         </div>
     </div>
     <div class="w-full bg-d py-12">
-        <div class="w-full text-center text-s text-3xl font-semibold capitalize">trending quotes</div>
+        <div class="w-full text-center text-s text-xlarge font-semibold capitalize">trending quotes</div>
         <div class="w-full flex justify-center whitespace-nowrap overflow-x-scroll py-3">
             <div class="w-fit lg:w-full flex-wrap flex py-3 justify-center">
                 <!-- quote item -->
@@ -43,7 +43,7 @@
         </div>
     </div>
     <div class="w-full bg-p py-12">
-        <div class="w-full text-center text-s text-3xl font-semibold capitalize">Featuring quotes</div>
+        <div class="w-full text-center text-s text-xlarge font-semibold capitalize">Featuring quotes</div>
         <div class="w-full flex justify-center whitespace-nowrap overflow-x-scroll py-3">
             <div class="w-fit lg:w-full flex flex-wrap py-3 justify-center">
                 <!-- quote item -->
@@ -75,7 +75,7 @@
         </div>
     </div>
     <div class="ql2 w-full bg-d py-12">
-        <div class="w-full pl-12 text-d text-xl font-semibold">Filter quotes:
+        <div class="w-full pl-12 text-d text-large font-semibold">Filter quotes:
             <form action="post" class=" inline-flex flex-wrap">
                 <div class="w-fit h-auto p-1 relative">
                     <label for="author" class="text-base text-s">Author:</label>
@@ -130,3 +130,5 @@
     </div>
 </div>
 @endsection
+
+text-5xl

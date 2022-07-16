@@ -15,7 +15,7 @@
 @import 'tailwindcss/utilities';
 
 :root{
-
+/* color schemes for this project */
     --theme1-primary-color: #010519;
     --theme1-secondary-color: #ed4b5b;
     --theme1-default-color: #fff;
@@ -27,6 +27,7 @@
     font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
 }
 
+/* active color classes of this projectr */
 .bg-p{background-color: var(--theme1-primary-color);}
 .bg-s{background-color: var(--theme1-secondary-color);}
 .bg-d{background-color: var(--theme1-default-color);}
@@ -36,7 +37,28 @@
 .border-p{border-color: var(--theme1-primary-color);}
 .border-s{border-color: var(--theme1-secondary-color);}
 .border-d{border-color: var(--theme1-default-color);}
-.bg-grad1{background-image: linear-gradient(110deg, transparent 40%, var(--theme1-primary-color) 40%);}
+
+/* Font sizes; for easy responsiveness customization */
+.text-xlarge{font-size: xx-large;} /* for text-3xl/4xl*/
+.text-large{font-size: x-large;} /* for text-2xl size*/
+.text-medium{font-size: large;} /* for text-xl/lg size*/
+.text-small{font-size: small;} /* for text-base/text-sm*/
+.text-slarge{font-size: 7rem;}
+@media screen and (max-width:576px) {
+    .text-xlarge{font-size: x-large;} /* for text-3xl/4xl*/
+    .text-large{font-size: larger;} /* for text-2xl size*/
+    .text-medium{font-size: medium;} /* for text-xl/lg size*/
+    .text-small{font-size: small;} /* for text-base/text-sm*/
+    .text-slarge{font-size: 5rem;}
+}
+@media screen and (min-width:1000px) {
+    .text-xlarge{font-size: xx-large} /* for text-3xl/4xl*/
+    .text-large{font-size: x-large;} /* for text-2xl size*/
+    .text-medium{font-size: larger;} /* for text-xl/lg size*/
+    .text-small{font-size: large;} /* for text-base/text-sm*/
+}
+
+.bg-grad1{background-image: linear-gradient(-110deg, transparent 40%, var(--theme1-primary-color) 40%);}
 
 
 .welcome-bg{
@@ -66,7 +88,7 @@
     height: 75vh;
 }
 
-.sl1, .wl1, .wl2, .ql1, .ql2, .bl1, .blog, .help1, .help2{
+.sl1, .wl1, .wl2, .ql1, .ql2, .bl1, .blog, .help1, .help2, .auth-bg{
     background-position: center;
     background-size: cover;
     background-repeat: no-repeat;
@@ -113,9 +135,11 @@
     background-image: url("../../public/img/pexels.jpg");
     min-height: 100vh;
 }
+.auth-bg{
+    background-image: url("../../public/img/sunny.jpg");
+}
 .mini-scrollbar::-webkit-scrollbar {
-    width: 10rem;             /* width of the entire scrollbar */
-    height: 0.5rem;
+    height: 0.2rem;
 }
 .mini-scrollbar::-webkit-scrollbar-track {
     background: transparent;        /* color of the tracking area */
@@ -124,4 +148,8 @@
     background-color: white;    /* color of the scroll thumb */
     border-radius: 10rem;       /* roundness of the scroll thumb */
     border: 3px solid var(--theme1-primary-color);  /* creates padding around scroll thumb */
+}
+@media(min-width: 1024px) {
+    .section1{height: 10%;}
+    .section2{height: 90%;}
 }
